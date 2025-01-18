@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans",serif;
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.grid__layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.2rem;
+    margin-top: 20px
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+p {
+    color: #fff;
+}
+
+button {
+    padding: 16px 54px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 768px) {
+    .grid__layout{
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .illustration-mock{
+        width: 44%;
+    }
+
+    .content{
+        width: 44%;
+        text-align: center;
+    }
+}
